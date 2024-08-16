@@ -54,7 +54,7 @@ color: whitesmoke;
     background-size: cover;
     margin: 0 auto;
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     flex-direction: column;
 }
 .home h1{
@@ -98,6 +98,11 @@ color: whitesmoke;
     height: 200px;
     text-align: center;
     margin-left: 5em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 .Maintainance i.bx{
     font-size: 34px;
@@ -190,13 +195,13 @@ color: whitesmoke;
 }
 .text h6{
     padding-top: 30em;
-    color: rgb(209, 209, 233);
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 10x;
+   
 }
 .text p{
     text-align: justify;
-    color: brown;
+    color: rgb(36, 35, 35);
 }
 .boat{
     background-image: url(machine.jpeg);
@@ -206,13 +211,13 @@ color: whitesmoke;
 }
 .boat h6{
     padding-top: 30em;
-    color: rgb(209, 209, 233);
+    color: rgb(254, 254, 255);
     text-align: center;
-    font-size: 10x;
+    
 }
 .boat p{
-    text-align: end;
-    color: brown;
+    text-align: center;
+    color: rgb(22, 21, 21);
     padding-bottom: 20px;
 }
 .services3 .container{
@@ -234,7 +239,7 @@ color: whitesmoke;
     width: 100%;  
     display: grid;  
     grid-template-columns: repeat(3,1fr); 
-    height: 50ch;
+     height: 50vh; 
 }/*
 @media (max-width: 768px) {
     .services4 .container {
@@ -248,6 +253,10 @@ color: whitesmoke;
     background-repeat: no-repeat;
     text-align: center;
     color: whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 .tops{
@@ -257,6 +266,16 @@ color: whitesmoke;
     background-repeat: no-repeat;
     text-align: center;
     color: whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.here h6, p,
+.tops h6, p,
+.type h6, p{
+    padding-bottom: 1em;
 }
 .type{
     background-image: url(top.jpeg);
@@ -265,6 +284,11 @@ color: whitesmoke;
     background-repeat: no-repeat;
     text-align: center;
     color: whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 footer .container{
     margin: 0 auto;
@@ -328,6 +352,14 @@ footer .container{
                 }
                 
                 @media screen and (max-width: 576px) {
+                    html{
+                        font-size: 62.5%;
+                    }
+                    .logo{
+                        font-size: 15px;
+                    }
+                        
+                    
                     .service .container {
                         font-size: 70%;
                         grid-template-columns: repeat(1, 1fr);
@@ -336,13 +368,11 @@ footer .container{
                         grid-template-columns: repeat(1, 1fr);
                     }
                         .services3 .container {
-                            margin-top: 5em;
+                            margin-top: 2em;
                         }
-                        .services4 .container {
-                            padding-bottom: 10em;
-                        }
+                      
                         hr {
-                            margin-top: 10em;
+                            margin-top: 2em;
                         }
                         footer .container {
                             margin-top: 1em;
@@ -351,6 +381,9 @@ footer .container{
                     }
                     
                     @media screen and (max-width: 368px) {
+                        .logo{
+                            font-size: 15px;
+                        }
                         .service .container {
                             font-size: 70%;
                             grid-template-columns: repeat(1, 1fr);
